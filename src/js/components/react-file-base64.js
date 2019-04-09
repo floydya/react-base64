@@ -55,7 +55,8 @@ export default class FileBase64 extends React.Component {
   }
 
   render() {
-    const { multiple, className } = this.props
+    const { multiple, className } = this.props;
+    const { onDone, ...properties } = this.props;
     return (
       <input
         type="file"
@@ -63,7 +64,7 @@ export default class FileBase64 extends React.Component {
         multiple={multiple}
         className={className}
         // Accept addational props e.g. style 
-        {...this.props}
+        {...properties}
       />
     );
   }
