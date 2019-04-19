@@ -57,12 +57,10 @@ export default class FileBase64 extends React.Component {
   getProps(props) {
     let p = {};
     Object.keys(props).forEach(key => {
-      console.log(key);
       if(key !== 'onDone') {
         Object.assign(p, {[key]: props[key]})
       }
     })
-    console.log(p);
     return p;
   }
 

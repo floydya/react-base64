@@ -148,12 +148,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function getProps(props) {
 	      var p = {};
 	      Object.keys(props).forEach(function (key) {
-	        console.log(key);
 	        if (key !== 'onDone') {
 	          _extends(p, _defineProperty({}, key, props[key]));
 	        }
 	      });
-	      console.log(p);
 	      return p;
 	    }
 	  }, {
